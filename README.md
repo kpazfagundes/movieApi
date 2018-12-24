@@ -6,7 +6,7 @@ Pós Graduação em Desenvolvimento de Aplicações para Dispositivos Móveis
 PUC Minas - Contagem
 
 ## API
-Para os testes e documentação dos metodos desta API foi utilizado o [Postman] e o arquivo para importação da coleção de testes pode ser encontrado [aqui](movieapi.API.postman_collection.json)
+Para os testes e documentação dos metodos desta API foi utilizado o [Postman] e o arquivo para importação da coleção de testes pode ser encontrado [aqui](API.postman_collection.json)
 
 ## Instalação e execução da aplicação
 
