@@ -1,0 +1,475 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API",
+		"_postman_id": "de13f8ce-3775-7823-357a-6c3b4c2613e1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Movies",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:3000/movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAQY4qXg0xwBAHSK2DaBDlBSjYZAefZAMx99xXReTfKOPWQObcnnbgQonI0iRHow9wywLi4sWjt0WmDhJhqbzpz9RQEZBGJXJMeNvhLhoVpnK6ftFD1qz5dmxHPwJTrZAWCA237DUZA6XbmZBDt0ritEWk4NKowTatQTGXKFQG79xmWuqynM29qDIofYCEKBcmYaZARtVXMygyFGtbXAc6xaF04enlw31PEdzBOZAwibpcHYMd9BeOul",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie by ID",
+			"request": {
+				"url": "http://127.0.0.1:3000/movies/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Actor by ID",
+			"request": {
+				"url": "http://127.0.0.1:3000/actors/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Actors",
+			"request": {
+				"url": "http://127.0.0.1:3000/actors",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Directors",
+			"request": {
+				"url": "http://127.0.0.1:3000/directors",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Director by ID",
+			"request": {
+				"url": "http://127.0.0.1:3000/directors/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get FB ",
+			"request": {
+				"url": {
+					"raw": "https://graph.facebook.com/me?access_token=EAAQY4qXg0xwBAJ9MIAjYXKFDbKaXZBOr5OGou1rIcXGaru0RyI5imy8Ny2IiwH1XZBYZCaHvemWD2ACZCwBoHnDZAJZBudE5Ljy5LzWksfU81gNlnebkRXc6yDZCMnKgR1FRXkg01YbXNaqwrgpchfuQfa6gYK9CXmp5mzzK6dMC3Je9DgZBdgwe7WNv4jIBYN1G1GIQa5aPVZC2cHwrNSZAaPAHFCSzWUGHzBphXRVC5lZCY94KzRp8i4T&fields=name,email,id,picture",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAQY4qXg0xwBAJ9MIAjYXKFDbKaXZBOr5OGou1rIcXGaru0RyI5imy8Ny2IiwH1XZBYZCaHvemWD2ACZCwBoHnDZAJZBudE5Ljy5LzWksfU81gNlnebkRXc6yDZCMnKgR1FRXkg01YbXNaqwrgpchfuQfa6gYK9CXmp5mzzK6dMC3Je9DgZBdgwe7WNv4jIBYN1G1GIQa5aPVZC2cHwrNSZAaPAHFCSzWUGHzBphXRVC5lZCY94KzRp8i4T",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fields",
+							"value": "name,email,id,picture",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Testando acces token"
+			},
+			"response": []
+		},
+		{
+			"name": "Teste Token FB post",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:3000/auth/signin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signin"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAQY4qXg0xwBAHSK2DaBDlBSjYZAefZAMx99xXReTfKOPWQObcnnbgQonI0iRHow9wywLi4sWjt0WmDhJhqbzpz9RQEZBGJXJMeNvhLhoVpnK6ftFD1qz5dmxHPwJTrZAWCA237DUZA6XbmZBDt0ritEWk4NKowTatQTGXKFQG79xmWuqynM29qDIofYCEKBcmYaZARtVXMygyFGtbXAc6xaF04enlw31PEdzBOZAwibpcHYMd9BeOul",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fbToken\": \"EAAQY4qXg0xwBAJ9MIAjYXKFDbKaXZBOr5OGou1rIcXGaru0RyI5imy8Ny2IiwH1XZBYZCaHvemWD2ACZCwBoHnDZAJZBudE5Ljy5LzWksfU81gNlnebkRXc6yDZCMnKgR1FRXkg01YbXNaqwrgpchfuQfa6gYK9CXmp5mzzK6dMC3Je9DgZBdgwe7WNv4jIBYN1G1GIQa5aPVZC2cHwrNSZAaPAHFCSzWUGHzBphXRVC5lZCY94KzRp8i4T\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST directors",
+			"request": {
+				"url": "http://localhost:3000/directors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Steven Spielberg\",\n\t\"photo_url\": \"steven-pielberg.jpg\"\n}"
+				},
+				"description": "Post Directors"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT directors",
+			"request": {
+				"url": "http://localhost:3000/directors/6",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Steven Spielberg\",\n\t\"photo_url\": \"steven-spielberg.jpg\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE directors",
+			"request": {
+				"url": "http://localhost:3000/directors/6",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "DELETE Directors"
+			},
+			"response": []
+		},
+		{
+			"name": "POST uSER",
+			"request": {
+				"url": "http://127.0.0.1:3000/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "fbToken",
+						"value": "EAAQY4qXg0xwBAKsd88vZCYrxBrByHFgqKdBACUmWfIZBkx1K91jmJG5ZBvARZAj4OEIqFZA1GZCZBQ5B3ZBXOm7s7uEoiBFP4ZBaiCq7zFYpZCoYxjO67TDEbIIc6AdQryztzdLQsMBjx7xr32zdo2qe3PSgIry977JrJlPysk4H77WaALRV8uT8zKw8UP4J0kX2u2w0wPEV3WX0px8z617kOJZA81E1YZCa5T742Y07Nf6KiabKoqaY4cNl",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userFacebook\":\n\t{\n\t    \"name\": \"Barbara Alcjbeiadgihi Wisemanstein\",\n\t    \"email\": \"ncxjcvoliv_1542146886@tfbnw.net\",\n\t    \"id\": \"103711200647518\",\n\t    \"picture\": {\n\t        \"data\": {\n\t            \"height\": 50,\n\t            \"is_silhouette\": true,\n\t            \"url\": \"BarbaraWisemanstein.jpg\",\n\t            \"width\": 50\n\t        }\n\t    }\n\t}\n}"
+				},
+				"description": "Inserir novo usuário"
+			},
+			"response": []
+		},
+		{
+			"name": "GET User FB",
+			"request": {
+				"url": {
+					"raw": "https://graph.facebook.com/me?access_token=EAAQY4qXg0xwBAJ9MIAjYXKFDbKaXZBOr5OGou1rIcXGaru0RyI5imy8Ny2IiwH1XZBYZCaHvemWD2ACZCwBoHnDZAJZBudE5Ljy5LzWksfU81gNlnebkRXc6yDZCMnKgR1FRXkg01YbXNaqwrgpchfuQfa6gYK9CXmp5mzzK6dMC3Je9DgZBdgwe7WNv4jIBYN1G1GIQa5aPVZC2cHwrNSZAaPAHFCSzWUGHzBphXRVC5lZCY94KzRp8i4T&fields=name,email,id,picture",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAQY4qXg0xwBAJ9MIAjYXKFDbKaXZBOr5OGou1rIcXGaru0RyI5imy8Ny2IiwH1XZBYZCaHvemWD2ACZCwBoHnDZAJZBudE5Ljy5LzWksfU81gNlnebkRXc6yDZCMnKgR1FRXkg01YbXNaqwrgpchfuQfa6gYK9CXmp5mzzK6dMC3Je9DgZBdgwe7WNv4jIBYN1G1GIQa5aPVZC2cHwrNSZAaPAHFCSzWUGHzBphXRVC5lZCY94KzRp8i4T",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fields",
+							"value": "name,email,id,picture",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET All users",
+			"request": {
+				"url": "http://127.0.0.1:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET user by ID",
+			"request": {
+				"url": "http://127.0.0.1:3000/users/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT User",
+			"request": {
+				"url": "http://127.0.0.1:3000/user/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "fbToken",
+						"value": "EAAQY4qXg0xwBAKsd88vZCYrxBrByHFgqKdBACUmWfIZBkx1K91jmJG5ZBvARZAj4OEIqFZA1GZCZBQ5B3ZBXOm7s7uEoiBFP4ZBaiCq7zFYpZCoYxjO67TDEbIIc6AdQryztzdLQsMBjx7xr32zdo2qe3PSgIry977JrJlPysk4H77WaALRV8uT8zKw8UP4J0kX2u2w0wPEV3WX0px8z617kOJZA81E1YZCa5T742Y07Nf6KiabKoqaY4cNl",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userFacebook\":\n\t{\n\t    \"name\": \"Barbara Alcjbeiadgihi Wisemanstein\",\n\t    \"email\": \"ncxjcvoliv_1542146886@tfbnw.net\",\n\t    \"id\": \"103711200647518\",\n\t    \"picture\": {\n\t        \"data\": {\n\t            \"height\": 50,\n\t            \"is_silhouette\": true,\n\t            \"url\": \"Barbara_Wisemanstein.jpg\",\n\t            \"width\": 50\n\t        }\n\t    }\n\t}\n}"
+				},
+				"description": "Alterar usuário"
+			},
+			"response": []
+		},
+		{
+			"name": "POST Movie",
+			"request": {
+				"url": "http://127.0.0.1:3000/movie",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"title\": \"The Matrix 4\",\n    \"photo_url\": \"the-matrix3.jpg\",\n    \"lenght\": 128,\n    \"released_date\": \"2018-12-21\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Movie",
+			"request": {
+				"url": "http://127.0.0.1:3000/movie/8",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"title\": \"The Matrix 4\",\n    \"photo_url\": \"the-matrix3.jpg\",\n    \"lenght\": 128,\n    \"released_date\": \"2018-12-21\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Movie",
+			"request": {
+				"url": "http://127.0.0.1:3000/movie/8",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User statistic",
+			"request": {
+				"url": "http://127.0.0.1:3000/user/1/statistic",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Movies by user",
+			"request": {
+				"url": "http://127.0.0.1:3000/user/1/list",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST User List",
+			"request": {
+				"url": "http://127.0.0.1:3000/user/1/list",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"movie_id\": 1,\n\"list\": \"watched\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User List by User ID and Movie ID",
+			"request": {
+				"url": "http://127.0.0.1:3000/user/1/list/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
